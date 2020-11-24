@@ -1,3 +1,5 @@
+//run tests: npm test
+
 describe('carrers section search functionality testing', () => {
   browser.waitForAngularEnabled(false);
 
@@ -7,7 +9,7 @@ describe('carrers section search functionality testing', () => {
   });
 
   it('should click carreer link and verify user is redirected to carreer page', () => {
-    element(by.css('li[id="menu-item-66"] > a')).click();
+    element(by.css('#menu-item-66 > a')).click();
     expect(element(by.css('h1.title')).getText()).toEqual('Careers');
   });
 
