@@ -8,7 +8,7 @@ describe('carrers section search functionality testing', () => {
     expect(browser.getTitle()).toContain('Connected Curriculum');
   });
 
-  it('should click carreer link and verify user is redirected to carreer page', () => {
+  it('should click carreer link and verify user is redirected to career page', () => {
     element(by.css('#menu-item-66 > a')).click();
     expect(element(by.css('h1.title')).getText()).toEqual('Careers');
   });
